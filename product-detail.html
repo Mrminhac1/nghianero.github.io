@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+
+    <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Glidejs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css" />
+  
+     <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/style-product-detail.css">
+
+</head>
+<body>
+    <!-- 
+        ========================
+        Header
+        ========================
+     -->
+  <header id="header" class="header">
+    <!-- Navigation -->
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav__center">
+          <div class="nav__header">
+            <div class="nav__logo">
+              <h1>SHOP<span>Nero</span></h1>
+            </div>
+            
+            <div class="nav__hamburger">
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="nav__menu">
+            <div class="menu__top">
+              <h1 class="nav__category">SHOP<span>Nero</span></h1>
+              <div class="close__toggle">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                </svg>
+              </div>
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#header" class="nav__link scroll-link">Home</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#featured" class="nav__link scroll-link">Featured</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#blog" class="nav__link scroll-link">Blog</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#newsletter" class="nav__link scroll-link">Subscribe</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Login</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Register</a>
+              </li>
+            </ul>
+
+            <ul class="nav__icons">
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-user"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="icon__item">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+                </svg>
+                <span>2</span>
+              </a>
+            </ul>
+          </div>
+        </nav>
+        <div class="shopping-cart" style="display: none;" >
+          <div class="shopping-cart-header">
+            <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+            <div class="shopping-cart-total">
+              <span class="lighter-text">Total:</span>
+              <span class="main-color-text">$2,229.97</span>
+            </div>
+          </div> <!--end shopping-cart-header -->
+      
+          <ul class="shopping-cart-items">
+            <li class="clearfix">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
+              <span class="item-name">Sony DSC-RX100M III</span>
+              <span class="item-price">$849.99</span>
+              <span class="item-quantity">Quantity: 01</span>
+            </li>
+      
+            <li class="clearfix">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
+              <span class="item-name">KS Automatic Mechanic...</span>
+              <span class="item-price">$1,249.99</span>
+              <span class="item-quantity">Quantity: 01</span>
+            </li>
+      
+            <li class="clearfix">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
+              <span class="item-name">Kindle, 6" Glare-Free To...</span>
+              <span class="item-price">$129.99</span>
+              <span class="item-quantity">Quantity: 01</span>
+            </li>
+          </ul>
+      
+          <a href="#" class="button">Checkout</a>
+        </div> <!--end shopping-cart --><!--end container -->   
+          
+      </div>
+    </div>
+    
+ 
+  </header>
+
+  <!--Bread columns-->
+  <div class="breadcrumb container">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Đồng Hồ</a></li>
+    <li>Đồng Hồ Nam</li>
+</div>
+
+
+
+  <!-- Product detail -->
+  <section class="section product-detail">
+      <div class="product-detail__center container">
+        <div class="product-detail__box">
+          <div class="img-ct" style="height: 70vh; text-align: center;">
+            <img src="/images/features-2.jpg" id="productImg">
+
+            <div class="small-img-row" >
+              <div class="small-img-col">
+                  <img src="images/features-2.jpg" width="100%" class="small-img" />
+              </div>
+              <div class="small-img-col">
+                  <img src="images/features-3.jpg" width="100%" class="small-img" />
+              </div>
+              <div class="small-img-col">
+                  <img src="images/features-4.jpg" width="100%" class="small-img" />
+              </div>
+              <div class="small-img-col">
+                  <img src="images/features-4.jpg" width="100%" class="small-img" />
+              </div>
+          </div>
+          </div>
+          
+        </div>
+        <div class="product-detail__box">
+          <div class="infos">
+            <h2>Đồng hồ đôi Candino 1010 Limited Edition</h2>
+            <div class="reviews" >
+              <div class="rating">
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                  </svg>
+                </span>
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                  </svg>
+                </span>
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                  </svg>
+                </span>
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                  </svg>
+                </span>
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                  </svg>
+                </span>
+              </div>
+              
+            </div>
+            <div class="price">
+              <h3>1.500.500 VNĐ</h3>
+              <h3>2.500.500 VNĐ</h3>
+          </div>
+          
+          <div id="more-infos">
+              <h4 class="choose">Miêu Tả</h4>
+          </div>
+
+          <div id="info-content">
+              <p  class="paragraph" style="display: block;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus et, magnam animi distinctio, inventore id dolorem atque voluptatum sit dolor mollitia qui voluptate eligendi pariatur veritatis, quibusdam vitae facere accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam modi ipsum labore officiis tempore soluta laborum, ducimus temporibus, totam quo veritatis beatae id corrupti iste quod nemo qui sunt reiciendis.</p>
+              <p class="paragraph" style="display: none;">
+                  <div class="infos-paragraph">
+                    <h1></h1>
+                  </div>
+              </p>
+              <p class="paragraph" style="display: none;">Lorem Repellendus ullam odit placeat, non rem eaque. ipsum dolor sit amet consectetur adipisicing elit. Repellendus Repellendus ullam odit placeat, non rem eaque.ullam odit placeat, non rem eaque.</p>
+          </div>
+
+          <div class="quantity">
+            <h3>Số lượng :</h3>
+            <input type="number" name="items" id="counter" min="1" value="1">
+      </div>
+
+      <div class="hotline">
+        <span>Gọi đặt mua: </span>
+          <a href="tel:18006005" title="18006005"><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span> 1800.6005</a>
+        <span>(8:30 - 21:30)</span>
+      </div>
+
+          <div class="buttons">
+              <button id="add-to-cart"><i class="fa fa-shopping-cart"></i>THÊM GIỎ HÀNG</button>
+              <button id="add-to-cart">MUA NGAY</button>
+          </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- information -->
+  <section class="section information">
+    <div class="information__center container">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'tab-info1')" style="margin-left: 3rem;">MÔ TẢ</button>
+        <button class="tablinks" onclick="openTab(event, 'tab-info2')" style="margin-left: 3rem;">CHẾ ĐỘ BẢO HÀNH & HẬU MÃI</button>
+        
+      </div>
+      
+      <div id="tab-info1" class="tabcontent" style="display: block;">
+        <div class="Describe__center">
+          <div class="box__title">
+            <div class="thong-tin-san-pham">
+              <p><strong>Thương Hiệu:</strong> <a href="#" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Casio</a></p>
+              <p><strong>Số Hiệu Sản Phẩm:</strong> <a href="#" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">MTP-1370L-7AVDF</a></p>
+              <p><strong>Xuất Xứ:</strong> Nhật Bản</p>
+              <p><strong>Giới Tính:</strong> Nam</p>
+              <p><strong>Kính:</strong> <a href="#" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Mineral Crystal (Kính Cứng)</a></p>
+              <p><strong>Máy:</strong> <a href="#" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Quartz (Pin)</a></p>
+              <p><strong>Bảo Hành Quốc Tế:</strong> 1 Năm</p>
+              <p><strong>Bảo Hành Tại Hải Triều:</strong> 5 Năm</p>
+              <p><strong>Đường Kính Mặt Số:</strong> 40mm</p>
+              <p><strong>Bề Dày Mặt Số:</strong> 9mm</p>
+              <p><strong>Niềng:</strong> <a href="#" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Thép Không Gỉ</a></p>
+              <p><strong>Dây Đeo:</strong> <a href="#" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Dây Da Chính Hãng</a></p>
+              <p><strong>Màu Mặt Số:</strong> Trắng</p>
+              <p><strong>Chống Nước:</strong> <a href="#" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">5 ATM</a></p>
+              <p><strong>Chức Năng:</strong> Lịch Ngày – Lịch Thứ</p>
+              <p><strong><a href="#" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Nơi sản xuất (Tùy từng lô hàng)</a>:</strong> Trung Quốc</p>
+            </div>
+          </div>
+          <div class="box__img" style="flex-basis: 70%;">
+              <div class="more">
+                <span style="font-family: 'times new roman', times, serif; font-size: 12pt;"><b><i><a href="https://donghohaitrieu.com/brand/casio" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ Casio</a> luôn được đánh giá cao trên thị trường hiện nay nhờ vào chất lượng rất vượt trội.
+                  Và nếu bạn đang tìm kiếm một sản phẩm có thể sử dụng hàng ngày như đi làm hay đi học, mức giá hợp lý nhưng vẫn mang đến một phong cách nam tính thì chắc chắn rằng phiên bản <a href="https://donghohaitrieu.com" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">đồng hồ
+                 </a> Casio MTP-1370L-7AVDF chính là sự lựa chọn phù hợp của bạn.</i></b></span>
+   
+                 <span style="display: block;font-family: 'times new roman', times, serif; font-size: 14pt;"><b>Review chi tiết đồng hồ Casio MTP-1370L-7AVDF</b></span>
+                 <span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;"><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/15-hang-dong-ho-thoi-trang-nam-nu-dep-gia-re-tai-viet-nam.html" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ thời trang</a> được sản xuất bởi thương hiệu Casio chắc chắn đã không còn quá xa lạ đối với các chàng trai yêu thích những sản phẩm có thiết kế đơn giản nhưng vẫn tỏa ra phong cách sang trọng đầy lịch lãm.</span>
+                 <p><span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;">Tuy khá nổi tiếng với mức giá ưu đãi, không hề cao nhưng chất lượng trên những chiếc đồng hồ Casio là không thể nào bàn cãi, vừa bền bỉ theo thời gian lại khá dễ sử dụng và điều chỉnh.</span></p>
+   
+                 <div class="box__img-detail" style="width: 100%; height: 50rem;text-align: center;">
+                   <img src="/images/product1.jpg" >
+                 </div>
+              </div>
+              
+              <div class="more">
+                <span style="font-family: 'times new roman', times, serif; font-size: 12pt;"><b><i><a href="https://donghohaitrieu.com/brand/casio" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ Casio</a> luôn được đánh giá cao trên thị trường hiện nay nhờ vào chất lượng rất vượt trội.
+                  Và nếu bạn đang tìm kiếm một sản phẩm có thể sử dụng hàng ngày như đi làm hay đi học, mức giá hợp lý nhưng vẫn mang đến một phong cách nam tính thì chắc chắn rằng phiên bản <a href="https://donghohaitrieu.com" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">đồng hồ
+                 </a> Casio MTP-1370L-7AVDF chính là sự lựa chọn phù hợp của bạn.</i></b></span>
+   
+                 <span style="display: block;font-family: 'times new roman', times, serif; font-size: 14pt;"><b>Review chi tiết đồng hồ Casio MTP-1370L-7AVDF</b></span>
+                 <span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;"><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/15-hang-dong-ho-thoi-trang-nam-nu-dep-gia-re-tai-viet-nam.html" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ thời trang</a> được sản xuất bởi thương hiệu Casio chắc chắn đã không còn quá xa lạ đối với các chàng trai yêu thích những sản phẩm có thiết kế đơn giản nhưng vẫn tỏa ra phong cách sang trọng đầy lịch lãm.</span>
+                 <p><span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;">Tuy khá nổi tiếng với mức giá ưu đãi, không hề cao nhưng chất lượng trên những chiếc đồng hồ Casio là không thể nào bàn cãi, vừa bền bỉ theo thời gian lại khá dễ sử dụng và điều chỉnh.</span></p>
+
+              </div>
+              <div class="more">
+                <span style="font-family: 'times new roman', times, serif; font-size: 12pt;"><b><i><a href="https://donghohaitrieu.com/brand/casio" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ Casio</a> luôn được đánh giá cao trên thị trường hiện nay nhờ vào chất lượng rất vượt trội.
+                  Và nếu bạn đang tìm kiếm một sản phẩm có thể sử dụng hàng ngày như đi làm hay đi học, mức giá hợp lý nhưng vẫn mang đến một phong cách nam tính thì chắc chắn rằng phiên bản <a href="https://donghohaitrieu.com" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">đồng hồ
+                 </a> Casio MTP-1370L-7AVDF chính là sự lựa chọn phù hợp của bạn.</i></b></span>
+   
+                 <span style="display: block;font-family: 'times new roman', times, serif; font-size: 14pt;"><b>Review chi tiết đồng hồ Casio MTP-1370L-7AVDF</b></span>
+                 <span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;"><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/15-hang-dong-ho-thoi-trang-nam-nu-dep-gia-re-tai-viet-nam.html" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ thời trang</a> được sản xuất bởi thương hiệu Casio chắc chắn đã không còn quá xa lạ đối với các chàng trai yêu thích những sản phẩm có thiết kế đơn giản nhưng vẫn tỏa ra phong cách sang trọng đầy lịch lãm.</span>
+                 <p><span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;">Tuy khá nổi tiếng với mức giá ưu đãi, không hề cao nhưng chất lượng trên những chiếc đồng hồ Casio là không thể nào bàn cãi, vừa bền bỉ theo thời gian lại khá dễ sử dụng và điều chỉnh.</span></p>
+
+              </div>
+              <div class="more">
+                <span style="font-family: 'times new roman', times, serif; font-size: 12pt;"><b><i><a href="https://donghohaitrieu.com/brand/casio" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ Casio</a> luôn được đánh giá cao trên thị trường hiện nay nhờ vào chất lượng rất vượt trội.
+                  Và nếu bạn đang tìm kiếm một sản phẩm có thể sử dụng hàng ngày như đi làm hay đi học, mức giá hợp lý nhưng vẫn mang đến một phong cách nam tính thì chắc chắn rằng phiên bản <a href="https://donghohaitrieu.com" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">đồng hồ
+                 </a> Casio MTP-1370L-7AVDF chính là sự lựa chọn phù hợp của bạn.</i></b></span>
+   
+                 <span style="display: block;font-family: 'times new roman', times, serif; font-size: 14pt;"><b>Review chi tiết đồng hồ Casio MTP-1370L-7AVDF</b></span>
+                 <span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;"><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/15-hang-dong-ho-thoi-trang-nam-nu-dep-gia-re-tai-viet-nam.html" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ thời trang</a> được sản xuất bởi thương hiệu Casio chắc chắn đã không còn quá xa lạ đối với các chàng trai yêu thích những sản phẩm có thiết kế đơn giản nhưng vẫn tỏa ra phong cách sang trọng đầy lịch lãm.</span>
+                 <p><span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;">Tuy khá nổi tiếng với mức giá ưu đãi, không hề cao nhưng chất lượng trên những chiếc đồng hồ Casio là không thể nào bàn cãi, vừa bền bỉ theo thời gian lại khá dễ sử dụng và điều chỉnh.</span></p>
+
+              </div>
+              <div class="more">
+                <span style="font-family: 'times new roman', times, serif; font-size: 12pt;"><b><i><a href="https://donghohaitrieu.com/brand/casio" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ Casio</a> luôn được đánh giá cao trên thị trường hiện nay nhờ vào chất lượng rất vượt trội.
+                  Và nếu bạn đang tìm kiếm một sản phẩm có thể sử dụng hàng ngày như đi làm hay đi học, mức giá hợp lý nhưng vẫn mang đến một phong cách nam tính thì chắc chắn rằng phiên bản <a href="https://donghohaitrieu.com" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">đồng hồ
+                 </a> Casio MTP-1370L-7AVDF chính là sự lựa chọn phù hợp của bạn.</i></b></span>
+   
+                 <span style="display: block;font-family: 'times new roman', times, serif; font-size: 14pt;"><b>Review chi tiết đồng hồ Casio MTP-1370L-7AVDF</b></span>
+                 <span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;"><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/15-hang-dong-ho-thoi-trang-nam-nu-dep-gia-re-tai-viet-nam.html" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ thời trang</a> được sản xuất bởi thương hiệu Casio chắc chắn đã không còn quá xa lạ đối với các chàng trai yêu thích những sản phẩm có thiết kế đơn giản nhưng vẫn tỏa ra phong cách sang trọng đầy lịch lãm.</span>
+                 <p><span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;">Tuy khá nổi tiếng với mức giá ưu đãi, không hề cao nhưng chất lượng trên những chiếc đồng hồ Casio là không thể nào bàn cãi, vừa bền bỉ theo thời gian lại khá dễ sử dụng và điều chỉnh.</span></p>
+
+              </div>
+              <div class="more">
+                <span style="font-family: 'times new roman', times, serif; font-size: 12pt;"><b><i><a href="https://donghohaitrieu.com/brand/casio" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ Casio</a> luôn được đánh giá cao trên thị trường hiện nay nhờ vào chất lượng rất vượt trội.
+                  Và nếu bạn đang tìm kiếm một sản phẩm có thể sử dụng hàng ngày như đi làm hay đi học, mức giá hợp lý nhưng vẫn mang đến một phong cách nam tính thì chắc chắn rằng phiên bản <a href="https://donghohaitrieu.com" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">đồng hồ
+                 </a> Casio MTP-1370L-7AVDF chính là sự lựa chọn phù hợp của bạn.</i></b></span>
+   
+                 <span style="display: block;font-family: 'times new roman', times, serif; font-size: 14pt;"><b>Review chi tiết đồng hồ Casio MTP-1370L-7AVDF</b></span>
+                 <span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;"><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/15-hang-dong-ho-thoi-trang-nam-nu-dep-gia-re-tai-viet-nam.html" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ thời trang</a> được sản xuất bởi thương hiệu Casio chắc chắn đã không còn quá xa lạ đối với các chàng trai yêu thích những sản phẩm có thiết kế đơn giản nhưng vẫn tỏa ra phong cách sang trọng đầy lịch lãm.</span>
+                 <p><span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;">Tuy khá nổi tiếng với mức giá ưu đãi, không hề cao nhưng chất lượng trên những chiếc đồng hồ Casio là không thể nào bàn cãi, vừa bền bỉ theo thời gian lại khá dễ sử dụng và điều chỉnh.</span></p>
+
+              </div>
+              <div class="more">
+                <span style="font-family: 'times new roman', times, serif; font-size: 12pt;"><b><i><a href="https://donghohaitrieu.com/brand/casio" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ Casio</a> luôn được đánh giá cao trên thị trường hiện nay nhờ vào chất lượng rất vượt trội.
+                  Và nếu bạn đang tìm kiếm một sản phẩm có thể sử dụng hàng ngày như đi làm hay đi học, mức giá hợp lý nhưng vẫn mang đến một phong cách nam tính thì chắc chắn rằng phiên bản <a href="https://donghohaitrieu.com" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">đồng hồ
+                 </a> Casio MTP-1370L-7AVDF chính là sự lựa chọn phù hợp của bạn.</i></b></span>
+   
+                 <span style="display: block;font-family: 'times new roman', times, serif; font-size: 14pt;"><b>Review chi tiết đồng hồ Casio MTP-1370L-7AVDF</b></span>
+                 <span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;"><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/15-hang-dong-ho-thoi-trang-nam-nu-dep-gia-re-tai-viet-nam.html" target="_blank" rel="noopener noreferrer" data-wpel-link="internal">Đồng hồ thời trang</a> được sản xuất bởi thương hiệu Casio chắc chắn đã không còn quá xa lạ đối với các chàng trai yêu thích những sản phẩm có thiết kế đơn giản nhưng vẫn tỏa ra phong cách sang trọng đầy lịch lãm.</span>
+                 <p><span style="font-weight: 400; font-family: 'times new roman', times, serif; font-size: 12pt;">Tuy khá nổi tiếng với mức giá ưu đãi, không hề cao nhưng chất lượng trên những chiếc đồng hồ Casio là không thể nào bàn cãi, vừa bền bỉ theo thời gian lại khá dễ sử dụng và điều chỉnh.</span></p>
+              </div>
+              
+            <div class="view-more">
+              <a href="#" id="read__more">xem thêm</a>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+      
+      <div id="tab-info2" class="tabcontent">
+            <span style="font-size: 14pt; font-family: 'courier new', courier, monospace;">Chế Độ Bảo Hành</span>
+            <strong><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Tất cả các đồng hồ khi bán ra đều kèm theo 2 phiếu bảo hành:</span></strong>
+            <ul style="list-style-type: square;">
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">1 Phiếu Bảo Hành (hoặc Thẻ Bảo Hành/Sổ Bảo Hành) của hãng có giá trị bảo hành Quốc tế (Thời gian bảo hành tùy theo quy định của từng hãng).</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">1 Phiếu Bảo Hành của Hải Triều (Sử dụng để được thay pin miễn phí vĩnh viễn &amp; Hưởng chế độ bảo hành tăng thêm từ 1-4 năm của Hải Triều).</span></li>
+            </ul>
+            <span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;"><strong>Ví dụ:</strong> Đồng Hồ Citizen có chế độ bảo hành chính hãng: máy = 12 tháng, Pin = 12 tháng.</span>
+            <ul style="list-style-type: square;">
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Khi mua tại Hải Triều, Khách hàng sẽ được tặng thêm thời gian bảo hành từ 4 năm về máy. Pin = Vĩnh Viễn.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Tổng cộng: Khi mua tại Hải Triều, đồng hồ Citizen&nbsp;sẽ được bảo hành máy = 05 năm, Pin = Vĩnh Viễn.</span></li>
+            </ul>
+            <strong><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Lưu ý:</span></strong>
+            <ul style="list-style-type: square;">
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Đối với sản phẩm còn trong thời gian bảo hành Quốc Tế: Quý khách có thể đem tới Hải Triều hoặc bất kỳ nhà trung tâm bảo hành nào của hãng được ghi trên phiếu để yêu cầu được kiểm tra đồng hồ.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Đối với sản phẩm hết thời gian bảo hành Quốc Tế nhưng vẫn trong thời gian bảo hành tại Hải Triều: Quý khách đem đồng hồ kèm Phiếu Bảo Hành của Hải Triều tới bất kỳ chi nhánh nào của Hải Triều để được hướng dẫn và kiểm tra đồng hồ.</span></li>
+            </ul>
+            <strong><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Điều Kiện Được Bảo Hành</span></strong>
+            <ul style="list-style-type: square;">
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Bảo hành chỉ có giá trị khi đồng hồ có Phiếu bảo hành của hãng &amp; Phiếu bảo hành của Hải Triều đi kèm, điền chính xác, đầy đủ các thông tin.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Phiếu bảo hành phải còn nguyên vẹn, không rách, chấp vá, hoen ố, mờ nhạt.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Còn trong thời gian bảo hành. Thời gian bảo hành được tính từ ngày mua có ghi trên Phiếu Bảo Hành.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Chỉ bảo hành thay thế mới cho những linh kiện, phụ tùng bị hỏng – không thay thế bằng một chiếc đồng hồ khác.</span></li>
+            </ul>
+            <strong><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Điều Kiện Không Được Bảo Hành</span></strong>
+            <ul style="list-style-type: square !important;">
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Đồng hồ không có Phiếu bảo hành của hãng và Phiếu bảo hành của Hải Triều đi kèm.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Các loại dây đeo, khoá, vỏ, màu xi, mặt số, mặt kiếng bị hỏng hóc, vỡ do sử dụng không đúng, tai nạn, lão hóa tự nhiên, va đập, … trong quá trình sử dụng.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Hỏng hóc do hậu quả gián tiếp của việc sử dụng sai hướng dẫn của hãng có kèm theo đồng hồ.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Trầy xước về dây hoặc mặt kiếng bị trầy xước, vỡ do va chạm trong quá trình sử dụng.&nbsp;</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Tự ý thay đổi máy móc bên trong, mở ra can thiệp sửa chữa trong thời gian còn bảo hành –&nbsp;Tại những nơi không phải là trung tâm của hãng</span></li>
+            </ul>
+            <strong><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Chế Độ Bảo Hành RED GUARANTEE</span></strong>
+            <ul style="list-style-type: square;">
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Tăng thêm 1-2 năm bảo hành tại Hải Triều ngoài chế độ bảo hành Quốc Tế của hãng để có tổng thời gian là 4 năm.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Ưu tiên bảo hành – Đồng hồ sẽ được xếp vào danh sách ưu tiên bảo hành để nhanh chóng quay lại với Quý khách.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Giao nhận đồng hồ bảo hành ngay tại nhà Quý khách.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Cập nhật tình trạng đồng hồ qua điện thoại tới Quý khách. Quý khách được tư vấn, cập nhật tình trạng đồng hồ trong quá trình đồng hồ được bảo hành.</span></li>
+            <li><span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">4 năm đánh bóng đồng hồ miễn phí.</span></li>
+            </ul>
+            <span style="font-family: 'courier new', courier, monospace; font-size: 14pt;">Chính Sách Đổi Hàng</span>
+            <span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Trong vòng 7 ngày kể từ ngày mua hàng từ Đồng Hồ Hải Triều, Quý khách có thể yêu cầu đổi hàng hoàn toàn miễn phí. Thời hạn 7 ngày được tính theo dấu bưu điện khi Quý khách gửi sản phẩm về cho chúng tôi hoặc thời gian chúng tôi tiếp nhận yêu cầu trực tiếp (tại cửa hàng) của Quý khách.</span>
+            </ul>
+          </div>
+
+      </div>  
+  </section>
+
+  <!-- featured -->
+  <section class="section featured" id="featured">
+    <div class="featured__container container">
+      <div class="title-row">
+        <h2>Đồng hồ có thể bạn sẻ thích</h2>
+				<p>xem ngay</p>
+      </div>
+      <div class="featured__center">
+        <div class="product">
+          <div class="img__container">
+            <img src="./images/features-1.jpg" alt="" />
+          </div>
+          <div class="product__bottom">
+            <div class="rating">
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                </svg>
+              </span>
+            </div>
+            <h3>Polar Skate Co Devil T Shirt</h3>
+            <div class="price">
+              <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+              <span class="price__two">3.100.500<span class="dong">₫</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img__container">
+            <img src="./images/features-2.jpg" alt="" />
+          </div>
+          <div class="product__bottom">
+            <div class="rating">
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                </svg>
+              </span>
+            </div>
+            <h3>Polar Skate Co Devil T Shirt</h3>
+            <div class="price">
+              <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+              <span class="price__two">3.100.500<span class="dong">₫</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img__container">
+            <img src="./images/features-3.jpg" alt="" />
+          </div>
+          <div class="product__bottom">
+            <div class="rating">
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                </svg>
+              </span>
+            </div>
+            <h3>Polar Skate Co Devil T Shirt</h3>
+            <div class="price">
+              <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+              <span class="price__two">3.100.500<span class="dong">₫</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img__container">
+            <img src="./images/features-4.jpg" alt="" />
+          </div>
+          <div class="product__bottom">
+            <div class="rating">
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                </svg>
+              </span>
+            </div>
+            <h3>Polar Skate Co Devil T Shirt</h3>
+            <div class="price">
+              <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+              <span class="price__two">3.100.500<span class="dong">₫</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <!-- Facility -->
+  <section class="facility section" id="facility">
+    <div class="facility-container container">
+      <div class="facility-box">
+        <div class="facility-icon">
+          <i class="fa fa-plane" aria-hidden="true"></i>
+        </div>
+        <p>FREE SHIPPING WORLD WIDE</p>
+      </div>
+
+      <div class="facility-box">
+        <div class="facility-icon">
+          <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+        </div>
+        <p>100% MONEY BACK GUARANTEE</p>
+      </div>
+
+      <div class="facility-box">
+        <div class="facility-icon">
+          <i class="fa fa-credit-card" aria-hidden="true"></i>
+        </div>
+        <p>MANY PAYMENT GATWAYS</p>
+      </div>
+
+      <div class="facility-box">
+        <div class="facility-icon">
+          <i class="fa fa-headphones" aria-hidden="true"></i>
+        </div>
+        <p>24/7 ONLINE SUPPORT</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>MỞ RỘNG</h3>
+          <a href="#">Nhãn hiệu</a>
+          <a href="#">Phiếu quà tặng</a>
+          <a href="#">Chi nhánh</a>
+          <a href="#">Đặc biệt</a>
+          <a href="#">Sơ đồ trang web</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>THÔNG TIN</h3>
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Chính sách bảo mật</a>
+          <a href="#">Điều khoản và điều kiện</a>
+          <a href="#">Liên hệ chúng tôi</a>
+          <a href="#">Sơ đồ trang web</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>TÀI KHOẢN</h3>
+          <a href="#">Tài khoản của tôi</a>
+          <a href="#">Lịch sử đơn hàng</a>
+          <a href="#">Danh sách mong muốn</a>
+          <a href="#">Bản tin</a>
+          <a href="#">Lợi nhuận</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-location"></use>
+              </svg>
+            </span>
+            10/8 Nguyễn Bỉnh Khiêm,Team - Huế - Group
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+              </svg>
+            </span>
+            Neroqa1999@gmail.com
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+            0363636336
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+              </svg>
+            </span>
+            TP.Huế - Việt Nam
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+</main>
+
+
+<!-- Glidejs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- Custom Script -->
+<script src="./js/product.js"></script>
+<script src="./js/index.js"></script>
+
+</body>
+</html>

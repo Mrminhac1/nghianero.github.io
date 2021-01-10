@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng Hồ Nam</title>
+
+    <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Glidejs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css" />
+
+     <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style-product-detail.css">
+
+</head>
+<body>
+    <!-- 
+        ========================
+        Header
+        ========================
+     -->
+    <header id="header" class="header">
+        <!-- Navigation -->
+        <div class="navigation">
+        <div class="container">
+            <nav class="nav__center">
+            <div class="nav__header">
+                <div class="nav__logo">
+                <h1>SHOP<span>Nero</span></h1>
+                </div>
+                
+                <div class="nav__hamburger">
+                <span>
+                    <svg>
+                    <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </span>
+                </div>
+            </div>
+
+            <div class="nav__menu">
+                <div class="menu__top">
+                <h1 class="nav__category">SHOP<span>Nero</span></h1>
+                <div class="close__toggle">
+                    <svg>
+                    <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                    </svg>
+                </div>
+                </div>
+                <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#header" class="nav__link scroll-link">Home</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#featured" class="nav__link scroll-link">Featured</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#blog" class="nav__link scroll-link">Blog</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#newsletter" class="nav__link scroll-link">Subscribe</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Login</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Register</a>
+                </li>
+                </ul>
+
+                <ul class="nav__icons">
+                <a href="#" class="icon__item">
+                    <svg>
+                    <use xlink:href="./images/sprite.svg#icon-search"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="icon__item">
+                    <svg>
+                    <use xlink:href="./images/sprite.svg#icon-user"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="icon__item">
+                    <svg>
+                    <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+                    </svg>
+                    <span>2</span>
+                </a>
+                </ul>
+            </div>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <!--Bread columns-->
+    <div class="breadcrumb container">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Đồng Hồ</a></li>
+        <li>Đồng Hồ Nam</li>
+    </div>
+
+    <div class="order container">
+      <div class="price" >
+          <span>Giá: </span>
+          <div class="lstPrice">
+              <ul>
+                    <li><a href="#" title="Dưới 2 triệu">Dưới 2 triệu</a></li>
+                    <li><a href="#" title="Từ 2 - 5 triệu">Từ 2 - 5 triệu</a></li>
+                    <li><a href="#" title="Từ 5 - 10 triệu">Từ 5 - 10 triệu</a></li>
+                    <li><a href="#" title="Từ 10 - 20 triệu">Từ 10 - 20 triệu</a></li>
+                    <li><a href="#" title="Từ 20 - 50 triệu">Từ 20 - 50 triệu</a></li>
+                    <li><a href="#" title="Trên 50 Triệu">Trên 50 Triệu</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="order__right">
+        <div class="order__right-title">
+          <span><a href="#"> ĐƯỜNG MẶT KÍNH </a></span>
+          <i class="fa fa-caret-down"></i>
+          <div class="dropdown-content">
+            <div class="content__center">
+              <a href="#">Dưới 25mm</a>
+              <a href="#">25 - 31 mm</a>
+              <a href="#">32 - 37 mm</a>
+              <a href="#">38 - 42 mm</a>
+              <a href="#">Trên 42 mm</a>
+            </div>
+          </div>
+        </div>
+        <div class="order__right-title">
+          <span><a href="#">TÍNH NĂNG</a></span>
+          <i class="fa fa-caret-down"></i>
+
+
+        </div>
+        <div class="order__right-title">
+          <span><a href="#">SẮP XẾP</a></span>
+          <i class="fa fa-caret-down"></i>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="list__choose container">
+      <ul>
+          <li><a href="#">Đồng Hồ <i class="fa fa-times" aria-hidden="true"></i></a></li>
+          <li><a href="#">Đồng Hồ Nam <i class="fa fa-times" aria-hidden="true"></i></a></li>
+      </ul>
+      
+    </div>
+    <!-- Featured Section -->
+    <section class="section featured" id="featured" style="padding-bottom: 1rem !important;">
+        <div class="featured__container container">
+          <div class="title"">
+            <h1 class="primary__title">Đồng Hồ Nam</h1>            
+          </div>
+          <div class="checkbox">
+            
+          </div>
+          <div class="featured__center">
+            <div class="product" >
+              <div class="img__container">
+                <a href="#">
+                <img src="./images/features-1.jpg" alt="" /></a>
+              </div>
+              <div class="product__bottom">
+                <div class="rating">
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </span>
+                </div>
+                <h3>Polar Skate Co Devil T Shirt</h3>
+                  <div class="price">
+                    <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                    <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                  </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="img__container">
+                <img src="./images/features-2.jpg" alt="" />
+              </div>
+              <div class="product__bottom">
+                <div class="rating">
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </span>
+                </div>
+                <h3>Polar Skate Co Devil T Shirt</h3>
+                <div class="price">
+                  <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                  <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="product">
+              <div class="img__container">
+                <img src="./images/features-3.jpg" alt="" />
+              </div>
+              <div class="product__bottom">
+                <div class="rating">
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </span>
+                </div>
+                <h3>Polar Skate Co Devil T Shirt</h3>
+                <div class="price">
+                  <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                  <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="img__container">
+                <img src="./images/features-4.jpg" alt="" />
+              </div>
+              <div class="product__bottom">
+                <div class="rating">
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </span>
+                </div>
+                <h3>Polar Skate Co Devil T Shirt</h3>
+                <div class="price">
+                  <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                  <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="img__container">
+                <img src="./images/features-1.jpg" alt="" />
+              </div>
+              <div class="product__bottom">
+                <div class="rating">
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </span>
+                </div>
+                <h3>Polar Skate Co Devil T Shirt</h3>
+                <div class="price">
+                  <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                  <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="img__container">
+                <img src="./images/features-2.jpg" alt="" />
+              </div>
+              <div class="product__bottom">
+                <div class="rating">
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </span>
+                </div>
+                <h3>Polar Skate Co Devil T Shirt</h3>
+                <div class="price">
+                  <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                  <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="img__container">
+                <img src="./images/features-3.jpg" alt="" />
+              </div>
+              <div class="product__bottom">
+                <div class="rating">
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </span>
+                </div>
+                <h3>Polar Skate Co Devil T Shirt</h3>
+                <div class="price">
+                  <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                  <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="img__container">
+                <img src="./images/features-4.jpg" alt="" />
+              </div>
+              <div class="product__bottom">
+                <div class="rating">
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </span>
+                </div>
+                <h3>Polar Skate Co Devil T Shirt</h3>
+                <div class="price">
+                  <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                  <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+                <div class="img__container">
+                  <img src="./images/features-1.jpg" alt="" />
+                </div>
+                <div class="product__bottom">
+                  <div class="rating">
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <h3>Polar Skate Co Devil T Shirt</h3>
+                  <div class="price">
+                    <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                    <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="img__container">
+                  <img src="./images/features-2.jpg" alt="" />
+                </div>
+                <div class="product__bottom">
+                  <div class="rating">
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <h3>Polar Skate Co Devil T Shirt</h3>
+                  <div class="price">
+                    <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                    <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="img__container">
+                  <img src="./images/features-3.jpg" alt="" />
+                </div>
+                <div class="product__bottom">
+                  <div class="rating">
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <h3>Polar Skate Co Devil T Shirt</h3>
+                  <div class="price">
+                    <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                    <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="img__container">
+                  <img src="./images/features-4.jpg" alt="" />
+                </div>
+                <div class="product__bottom">
+                  <div class="rating">
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <h3>Polar Skate Co Devil T Shirt</h3>
+                  <div class="price">
+                    <span class="price__one">4.500.500 <span class="dong">₫</span></span>
+                    <span class="price__two">3.100.500<span class="dong">₫</span></span>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></span>
+        </div>
+          
+        </div>
+    </section>
+
+    <div class="summary_content_cat container">
+      <p><span style="font-size:16px;">​</span></p>
+
+      <h2 style="text-align: center;"><span style="font-size:22px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>Đồng hồ nam chính hãng - Cao cấp - Giá cực tốt</strong></span></span></h2>
+
+      <p>&nbsp;</p>
+
+      <p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:arial,helvetica,sans-serif;">Để nói về ý nghĩa và cách chọn đồng hồ thì không phải chàng trai nào cũng biết. Nếu như nữ giới có được đặc quyền sở hữu nhiều món phụ kiện và thay đổi liên tục như túi xách, giày dép, trang sức,... thì đàn ông “may mắn” chỉ có một lựa chọn - Đó là chiếc <u><a href="#" target="_blank">đồng hồ đeo tay</a></u>.</span></span></p>
+
+      <h2 style="text-align: justify;"><span style="font-size:18px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>Lý do mà đàn ông nên đeo đồng hồ</strong></span></span></h2>
+
+      <p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:arial,helvetica,sans-serif;">Những lý do sau đây sẽ trả lời cho bạn biết vì sao mỗi người đàn ông nên sở hữu một chiếc đồng hồ:</span></span></p>
+
+      <p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:arial,helvetica,sans-serif;">- Không chỉ dừng lại ở việc nhắc nhở người đeo về thời gian, đồng hồ đối với đàn ông đôi khi là một món phụ kiện thời trang tượng trưng cho sự thành công. Hầu hết các nhà chính trị gia, tỷ phú, doanh nhân thành đạt, các ngôi sao nổi tiếng trên thế giới đều sở hữu&nbsp;rất nhiều đồng hồ đeo tay cao cấp và đắt giá.&nbsp;</span></span></p>
+
+      <p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:arial,helvetica,sans-serif;">- Đàn ông sẽ thiếu đi vẻ ngoài lịch lãm nếu vắng đi một chiếc đồng hồ đeo tay. Là item an toàn và không kén trang phục, chỉ với sự xuất hiện giản đơn và cách lựa chọn đồng hồ phù hợp sẽ làm cánh mày râu tỏa sáng và ghi điểm trong mắt nữ giới.&nbsp;</span></span></p>
+
+      <p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:arial,helvetica,sans-serif;">- Không chỉ nữ giới, thậm chí <u><a href="#" target="_blank">đồng hồ nam</a></u> còn được nhiều nhà sản xuất đồng hồ ưu ái hơn về cả thiết kế, đa dạng mẫu mã cũng như chất liệu sử dụng. Quý khách có thể chọn cho mình một chiếc đồng hồ nam dây da, đồng hồ nam dây kim loại hay đơn giản là một chiếc đồng hồ nam dây dù,... tùy vào sở thích và phong cách cá nhân của mình.</span></span></p>
+
+      <h2 style="text-align: justify;"><span style="font-size:18px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>Mua đồng hồ nam chính hãng, giá cực tốt tại NeroShop</strong></span></span></h2>
+
+      <p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:arial,helvetica,sans-serif;">Những mẫu đồng hồ được trưng bày ở NeroShop đều sở hữu những thiết kế tinh xảo, đẹp mắt cùng chất lượng cao cấp.&nbsp;Đồng hồ nam từ lâu không chỉ được xem là một món phụ kiện để xem giờ mà còn trở thành biểu tượng tạo dựng nên phong cách riêng ấn tượng của chủ sở hữu, một người bạn - một người tri kỷ không thể thiếu.</span></span></p>
+
+      <p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:arial,helvetica,sans-serif;">Đến với NeroShop bạn có thể thỏa sức khám phá những mẫu <strong>đồng hồ nam đẹp</strong>, thời trang và 100% chính hãng đến từ các thương hiệu đồng hồ nổi tiếng trên thế giới như Nhật Bản, Thụy Sỹ, Tây Ban Nha, Hoa Kỳ, Đức,... Bên cạnh đó, với tầm giá đa dạng từ các mẫu đồng hồ nam cao cấp đến những mẫu tầm trung, những mẫu đồng hồ nam đẹp giá rẻ... chắc chắn sẽ đáp ứng được đa dạng nhu cầu mua sắm của khách hàng.&nbsp;</span></span></p>
+
+      <p style="text-align: justify;"><span style="font-size:16px;"><span style="font-family:arial,helvetica,sans-serif;">Duy nhất tại hệ thống đồng hồ NeroShop bạn sẽ được chăm sóc và tận hưởng những chế độ đãi ngộ và bảo hành tốt nhất trên thị trường. Chúng tôi cam kết hàng chính hãng và giá tốt nhất cho khách hàng.</span></span></p>
+
+      <p><span style="font-size:16px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>Để được tư vấn cụ thể, Quý khách hàng liên hệ tới NeroShop qua:</strong><br>
+      <strong>Hotline:</strong> <span style="color:#FF0000;">1800 6785</span><br>
+      <strong>Facebook:<a href="https://www.facebook.com/" target="_blank" rel="nofollow"> </a></strong><a href="https://www.facebook.com/" target="_blank" rel="nofollow">https://www.facebook.com/</a><br>
+      <strong>Hệ thống Showroom:</strong> <a href="#" target="_blank">https://www.facebook.com/</a></span></span></p>
+    </div>
+    
+    
+    <!-- Newsletter -->
+    <section class="section newsletter" id="newsletter">
+        <div class="newsletter__container container">
+        <div class="newsletter__center">
+            <div class="newsletter__box">
+            <h2>Bản tin</h2>
+            <p>
+                Đăng ký nhận bản tin của chúng tôi và được giảm giá 20% khi mua hàng đầu tiên
+            </p>
+            </div>
+
+            <div class="newsletter__box" style="padding-top: 2rem;">
+            <form action="#">
+                <input type="email" placeholder="Your email" />
+                <button>SUBSCRIBE</button>
+            </form>
+            </div>
+        </div>
+        </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+        <div class="footer__top">
+            <div class="footer-top__box">
+            <h3>MỞ RỘNG</h3>
+            <a href="#">Nhãn hiệu</a>
+            <a href="#">Phiếu quà tặng</a>
+            <a href="#">Chi nhánh</a>
+            <a href="#">Đặc biệt</a>
+            <a href="#">Sơ đồ trang web</a>
+            </div>
+            <div class="footer-top__box">
+            <h3>THÔNG TIN</h3>
+            <a href="#">Về chúng tôi</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Điều khoản và điều kiện</a>
+            <a href="#">Liên hệ chúng tôi</a>
+            <a href="#">Sơ đồ trang web</a>
+            </div>
+            <div class="footer-top__box">
+            <h3>TÀI KHOẢN</h3>
+            <a href="#">Tài khoản của tôi</a>
+            <a href="#">Lịch sử đơn hàng</a>
+            <a href="#">Danh sách mong muốn</a>
+            <a href="#">Bản tin</a>
+            <a href="#">Lợi nhuận</a>
+            </div>
+            <div class="footer-top__box">
+            <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
+            <div>
+                <span>
+                <svg>
+                    <use xlink:href="./images/sprite.svg#icon-location"></use>
+                </svg>
+                </span>
+                10/8 Nguyễn Bỉnh Khiêm,Team - Huế - Group
+            </div>
+            <div>
+                <span>
+                <svg>
+                    <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+                </svg>
+                </span>
+                Neroqa1999@gmail.com
+            </div>
+            <div>
+                <span>
+                <svg>
+                    <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                </span>
+                0363636336
+            </div>
+            <div>
+                <span>
+                <svg>
+                    <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+                </svg>
+                </span>
+                TP.Huế - Việt Nam
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    
+</main>
+
+  <!-- Glidejs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <!-- Custom Script -->
+  <!-- JavaScript for slide -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./js/product.js"></script>
+  <script src="./js/index.js"></script>
+
+</body>
+</html>
